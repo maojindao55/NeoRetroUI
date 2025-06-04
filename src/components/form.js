@@ -49,4 +49,35 @@ module.exports = (theme) => ({
         boxShadow: `${theme('boxShadow.neoretro')}, 0 0 0 3px rgba(247, 223, 30, 0.5)`,
       },
     },
+    '.file-upload': {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      padding: theme('spacing.4'),
+      borderWidth: '1.5px',
+      borderStyle: 'dashed',
+      borderColor: theme('colors.secondary'),
+      borderRadius: theme('borderRadius.md'),
+      boxShadow: theme('boxShadow.neoretro'),
+      backgroundColor: theme('colors.background'),
+      cursor: 'pointer',
+      transition: 'all 0.3s ease',
+      '&:hover': {
+        borderColor: theme('colors.primary'),
+      },
+      '&:focus': {
+        outline: 'none',
+        boxShadow: `${theme('boxShadow.neoretro')}, 0 0 0 3px rgba(247, 223, 30, 0.5)`,
+      },
+    },
+    '.file-upload-icon': {
+      width: theme('spacing.12'),
+      height: theme('spacing.12'),
+      marginBottom: theme('spacing.2'),
+      color: theme('colors.secondary'),
+    },
+    '.file-upload-text': {
+      fontSize: theme('fontSize.sm'),
+      color: theme('colors.secondary'),
+    },
   })
